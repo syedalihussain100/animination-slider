@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.banner1,
+.banner2,
+.banner3,
+.banner4,
+.banner5 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+img {
+  width: 120%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: zoomout linear 12s infinite;
+}
+
+@keyframes zoomout{
+    100%{
+        width: 100%;
+    }
+}
+
+.text_box {
+  width: 600px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  color: #fff;
+  animation: textbox linear 3s infinite;
+  transform: translateY(100px);
+}
+
+@keyframes textbox{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.text_box h1 {
+  margin-bottom: 40px;
+}
+
+.text_box p {
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 80px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+span {
+  position: absolute;
+  width: 100px;
+  background: red;
+  height: 1px;
+  left: 0;
+}
+
+.banner1 {
+  animation: slider1 12s linear infinite;
+}
+.banner2 {
+  animation: slider2 12s linear infinite;
+}
+.banner3 {
+  animation: slider3 12s linear infinite;
+}
+.banner4 {
+  animation: slider4 12s linear infinite;
+}
+.banner5 {
+  animation: slider5 12s linear infinite;
+}
+
+@keyframes slider1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slider2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slider3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slider4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slider5{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+
+/* delay */
+.text_box1{
+    animation-delay: 0s;
+}
+
+.text_box2{
+    animation-delay: 0s;
+}
+
+.text_box3{
+    animation-delay: 0s;
+}
+
+.text_box4{
+    animation-delay: 0s;
+}
+
+.text_box5{
+    animation-delay: 0s;
+}
